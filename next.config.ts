@@ -8,9 +8,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  output: 'export',
   images: {
-    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -32,8 +30,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  basePath: '/fino',
-  assetPrefix: '/fino',
 };
 
 export default nextConfig;
