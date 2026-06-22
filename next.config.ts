@@ -32,6 +32,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  basePath: '/fino',
+  assetPrefix: '/fino',
 };
 
 export default nextConfig;
