@@ -1,0 +1,22 @@
+{
+  "placeholderImages": [
+    {
+      "id": "wallet-pattern-1",
+      "description": "Abstract pattern for digital wallet",
+      "imageUrl": "https://picsum.photos/seed/fino-wallet-1/600/400",
+      "imageHint": "abstract financial"
+    },
+    {
+      "id": "wallet-pattern-2",
+      "description": "Premium abstract waves for cards",
+      "imageUrl": "https://picsum.photos/seed/fino-wallet-2/600/400",
+      "imageHint": "abstract teal"
+    },
+    {
+      "id": "user-avatar",
+      "description": "Premium user profile",
+      "imageUrl": "https://picsum.photos/seed/fino-user/150/150",
+      "imageHint": "portrait business"
+    }
+  ]
+}

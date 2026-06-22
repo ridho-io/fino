@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 39 100% 97%; /* Creamy Off-white */
+    --foreground: 168 30% 15%; /* Deep Forest Teal */
+    --card: 0 0% 100%;
+    --card-foreground: 168 30% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 168 30% 15%;
+    --primary: 168 30% 15%; /* Deep Forest Teal */
+    --primary-foreground: 39 100% 97%;
+    --secondary: 167 33% 39%; /* Muted Sage */
+    --secondary-foreground: 39 100% 97%;
+    --muted: 167 20% 90%;
+    --muted-foreground: 167 33% 39%;
+    --accent: 155 49% 69%; /* Mint Green */
+    --accent-foreground: 168 30% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 168 20% 85%;
+    --input: 168 20% 85%;
+    --ring: 168 30% 15%;
+    --radius: 1.5rem;
+    --chart-1: 168 30% 15%;
+    --chart-2: 167 33% 39%;
+    --chart-3: 155 49% 69%;
+    --chart-4: 39 100% 80%;
+    --chart-5: 0 84% 60%;
+  }
+
+  .dark {
+    --background: 168 40% 4%;
+    --foreground: 39 100% 97%;
+    --card: 168 30% 10%;
+    --card-foreground: 39 100% 97%;
+    --popover: 168 30% 8%;
+    --popover-foreground: 39 100% 97%;
+    --primary: 155 49% 69%; /* Mint Green in dark mode for better contrast */
+    --primary-foreground: 168 30% 10%;
+    --secondary: 168 30% 15%;
+    --secondary-foreground: 39 100% 97%;
+    --muted: 168 30% 15%;
+    --muted-foreground: 167 33% 70%;
+    --accent: 39 100% 97%;
+    --accent-foreground: 168 30% 15%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 168 30% 20%;
+    --input: 168 30% 20%;
+    --ring: 155 49% 69%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground selection:bg-accent/30 transition-colors duration-300;
+  }
+}
+
+.glass-morphism {
+  @apply bg-white/40 dark:bg-card/40 backdrop-blur-xl border border-white/20 dark:border-white/10 shadow-xl;
+}
+
+.glass-card {
+  @apply bg-white/70 dark:bg-card/70 backdrop-blur-md border border-white/30 dark:border-white/10 shadow-sm transition-all duration-300;
+}
+
+.ios-shadow {
+  box-shadow: 0 8px 32px 0 rgba(26, 49, 44, 0.08);
+}
+
+.dark .ios-shadow {
+  box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0.5);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/20 rounded-full;
+}
